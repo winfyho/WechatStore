@@ -1,0 +1,35 @@
+<!--components/cart-item/cart-item.wxml-->
+
+<view class="cart-item">
+
+  <view class="btn" catchtap="chooseCart" data-cart="{{cartItem}}" data-num="{{num}}">
+    <text class="{{choosed === true ? 'active':''}}"></text>
+  </view>
+
+  <view class="image">
+    <image src="{{cartItem.imgUrl}}"></image>
+  </view>
+
+  <view class="content">
+  
+    <view class="title">{{cartItem.title}}</view>
+
+    <view class="bottom">
+
+      <view class="subtotal">￥{{subtotal}}</view>
+
+      <view class="num">
+
+        <text class="btn btn-del" catchtap="changeNum"  data-num="{{num-1}}" wx:if="{{num>1}}" >-</text>
+        <text class="btn" style="opacity:0;" wx:else ></text>
+        <text>{{num}}</text>
+        <text class="btn btn-plus" catchtap="changeNum" data-num="{{num+1}}" >+</text>
+      
+      </view>
+    
+    </view>
+
+  
+  </view>
+
+</view>

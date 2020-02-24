@@ -1,0 +1,98 @@
+/* components/order/order.wxss */
+.order{
+  width: 100%;
+  height: auto;
+  margin-bottom: 15rpx;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0rpx 40rpx 0rpx 40rpx;
+  
+}
+.order .top{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+}
+.order .top .time{
+  font-size: 26rpx;
+  color: #666;
+  flex: 1 1 auto;
+  text-align: left;
+}
+.order .top .state{
+  color: #f40;
+  font-size: 27rpx;
+  font-weight: 400;
+  flex: 0 0 100rpx;
+  text-align: center;
+}
+
+.order .center{
+  display: flex;
+  width: 100%;
+  height: 120rpx;
+}
+.order .center .img-list{
+  min-width: 120rpx;
+  max-width: 360rpx;
+  overflow: hidden;
+}
+.order .center .img-list .image{
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden
+}
+.order .center .img-list .image>image{
+  width: 100%;
+  height: 100%;
+}
+
+.order .center .title{
+  padding-left: 30rpx;
+  font-weight: 600;
+  color: #555;
+  flex: 1 1 auto;
+  overflow: hidden;
+  max-height: 80rpx;
+  line-height: 40rpx
+}
+
+.order .center .center-right{
+  flex: 0 0 150rpx;
+  text-align: right;
+}
+.order .center .center-right .order-price{
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #54ac9e;
+  font-weight: 500;
+  font-size: 34rpx;
+}
+.order .center .center-right .num{
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #777;
+  font-weight: 400;
+  font-size: 24rpx;
+}
+
+
+
+.order .bottom{
+  position: relative;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.order .bottom .cancel{
+  position: absolute;
+  margin: 25rpx 0rpx;
+  width: 130rpx;
+  height: 46rpx;
+  text-align: center;
+  line-height: 46rpx;
+  right: 0rpx;
+  border-radius: 30rpx;
+  border: 1px solid #666;
+  color: #666;
+  font-size: 23rpx;
+}

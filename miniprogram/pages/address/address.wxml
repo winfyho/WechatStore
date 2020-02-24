@@ -1,0 +1,38 @@
+<view class="btn-add" bindtap="startEdit" wx:if="{{showEditArea === false}}">添加收货地址</view>
+<view class="btn-complete" bindtap="completeEdit" wx:else>完成</view>
+
+<view class="add-area" wx:if="{{showEditArea === true}}">
+
+  <view class="add-input">
+    <view class="add-title">收货姓名：</view>
+    <view class="add-value">
+      <input placeholder="输入收货人姓名" bindinput="inputName" value="{{newName}}"></input>
+    </view>
+  </view>
+
+  <view class="add-input">
+    <view class="add-title">手机号：</view>
+    <view class="add-value">
+      <input placeholder="输入收货人手机号" bindinput="inputNewTell" value="{{newTitle}}"></input>
+    </view>
+  </view>
+
+
+
+  <view class="add-input address">
+    <view class="add-title">收货地址：</view>
+    <view class="add-value">
+      <textarea placeholder="输入详细地址，具体到门牌号如：**路101号" bindinput="inputNewAddr" value="{{newAddr}}"></textarea>
+    </view>
+  </view>
+
+
+
+</view>
+
+<view class="body">
+
+  <address wx:for="{{addrList}}" wx:key="index" address="{{item}}" />
+
+
+</view>

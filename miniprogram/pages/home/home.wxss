@@ -1,0 +1,33 @@
+/* miniprogram/pages/home/home.wxss */
+@import "./style/search_bar.wxss";
+
+page {
+  background: #eee;
+}
+
+.filter {
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  color: #333;
+  display: flex;
+}
+.filter>view.active{
+   color:#54ac9e;
+}
+
+.filter>view {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.body {
+  padding-top: 15rpx;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
+}
+
+

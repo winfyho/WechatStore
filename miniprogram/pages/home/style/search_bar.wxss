@@ -1,0 +1,27 @@
+.search{
+  height: 90rpx;
+  line-height: 80rpx;
+  display: flex;
+  background: #54ac9e;
+}
+.search .search-bar{
+  flex: 1 1 auto;
+  margin-left: 30rpx;
+}
+.search .search-bar input{
+  background: #eee;
+  font-size: 29rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 15rpx 0rpx;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+}
+.search .btn-search{
+  font-size: 30rpx;
+  line-height: 90rpx;
+  flex: 0 0 100rpx;
+  text-align: center;
+  color: #fff;
+}

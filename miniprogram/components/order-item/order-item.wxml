@@ -1,0 +1,28 @@
+<!--components/order-item/order-item.wxml-->
+<!--components/cart-item/cart-item.wxml-->
+
+<view class="order-item">
+
+
+  <view class="image">
+    <image src="{{orderItem.sale.imgUrl}}" mode="widthFix"></image>
+  </view>
+
+  <view class="content">
+  
+    <view class="title">{{orderItem.sale.title}}</view>
+
+    <view class="cat">类别：默认</view>
+
+    <view class="bottom">
+
+      <view class="subTotal">￥{{orderItem.subTotal}}</view>
+
+      <view class="num">数量：{{orderItem.num}}</view>
+    
+    </view>
+
+  
+  </view>
+
+</view>

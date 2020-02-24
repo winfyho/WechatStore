@@ -1,0 +1,49 @@
+/* components/sale-item/sale-item.wxss */
+.sale-item{
+  width: 100%;
+  height: 270rpx;
+  box-sizing: border-box;
+  padding:35rpx 20rpx;
+  border-bottom: 3px solid #ddd;
+  background: #fff;
+  display: flex;
+}
+.sale-item .image{
+  flex: 0 0 200rpx;
+  height: 200rpx;
+  margin-right: 30rpx;
+}
+.sale-item .image image{
+  width: 100%;
+  height: 100%;
+}
+
+.sale-item .content{
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  color: #666;
+}
+.sale-item .content .title{
+  max-height: 80rpx;
+  min-height: 40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 500;
+}
+.sale-item .content .time{
+  font-size: 24rpx;
+  padding: 8rpx 0rpx;
+}
+.sale-item .content .data-num>text{
+  display: inline-block;
+  padding: 8rpx 0;
+  padding-right: 20rpx;
+}
+.sale-item .content .price{
+  color: #54ac9e;
+  font-size: 32rpx;
+  font-weight: 500;
+  padding-top: 8rpx;
+}

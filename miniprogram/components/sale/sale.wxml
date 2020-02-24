@@ -1,0 +1,20 @@
+<view class="sale">
+
+  <view class="image">
+    <image src="{{sale.imgUrl}}" mode="widthFix"></image>
+  </view>
+
+  <view class="content">
+    <view class="title">{{sale.title}}</view>
+    <view class="bottom">
+      <view class="price">{{sale.price}}</view>
+      <view class="data">
+        <text>{{sale.pay_num}}人付款</text>
+        <text>浏览:{{sale.browse_num}}</text>
+      </view>
+
+
+    </view>
+  </view>
+
+</view>

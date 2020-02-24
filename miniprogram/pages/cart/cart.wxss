@@ -1,0 +1,4 @@
+/* miniprogram/pages/cart/cart.wxss */
+page{
+  background: #eee;
+}

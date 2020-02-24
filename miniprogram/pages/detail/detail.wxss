@@ -1,0 +1,89 @@
+/* miniprogram/pages/detail/detail.wxss */
+page{
+  background: #f2f2f2;
+  padding-bottom: 80rpx;
+}
+.images {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0rpx;
+  /* border-bottom: 1px solid #aaa; */
+  background: #fff;
+}
+
+.images image {
+  width: 750rpx;
+  height: 750rpx;
+}
+
+.content {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.option{
+  color: #666;
+}
+
+.title {
+  font-size: 34rpx;
+  font-weight: 600;
+  height: auto;
+  line-height: 70rpx;
+  min-height: 70rpx;
+  box-shadow: 0rpx 0rpx 30rpx rgba(0,0,0,0.2);
+}
+
+.data {
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.data .price {
+  line-height: 80rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #54ac9e;
+  flex: 1 1 auto;
+}
+
+.data .infor {
+  line-height: 80rpx;
+  color: #777;
+  font-size: 25rpx;
+  flex: 0 0 300rpx;
+}
+.data .infor>text{
+  padding-right: 15rpx;
+}
+.cats{
+  margin-bottom: 15rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.num{
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+
+
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+.footer>view{
+  flex: 1 1 auto;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #54ac9e;
+  color: #fff;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 500;
+}

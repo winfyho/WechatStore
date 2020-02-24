@@ -1,0 +1,31 @@
+<view class="images">
+  <image src="{{sale.imgUrl}}" mode="widthFix"></image>
+</view>
+
+<view class="content title">{{sale.title}}</view>
+
+
+<view class="content data">
+  <view class="price">{{sale.price}}</view>
+
+  <view class="infor">
+    <text>{{sale.pay_num}}人购买</text>
+    <text>{{sale.cart_num}}人添加</text>
+    <text>浏览：{{sale.browse_num}}</text>
+  </view>
+
+</view>
+
+<view class="content cats">
+  <view class="option">分类</view>
+</view>
+
+<view class="content num">
+  <view class="option">库存数量：{{sale.stock || 100}}</view>
+
+</view>
+
+<view class="footer">
+  <view class="btn btn-cart" data-sale="{{sale}}" bindtap="addCart">加入购物车</view>
+  <view class="btn btn-order" bindtap="routeToOrder" >立即购买</view>
+</view>

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "sale":"/components/sale/sale"
+  },
+  "navigationBarTitleText": "商城",
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

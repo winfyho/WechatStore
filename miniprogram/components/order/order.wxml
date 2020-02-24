@@ -1,0 +1,36 @@
+<!--components/order/order.wxml-->
+<view class="order">
+  <view class="top">
+
+    <view class="time">下单时间：{{detail.time}}</view>
+    <view class="state" style="color:{{state === '进行中' ? '#f40' : '#777'}}">{{state}}</view>
+
+  </view>
+
+  <view class="center">
+
+    <view class="img-list">
+      <view class="image" wx:for="{{saleList}}" wx:key="index"   >
+        <image src="{{item.sale.imgUrl}}" mode="widthFix"></image>
+      </view>
+    </view>
+
+    <view class="title">{{title}}</view>
+
+    <view class="center-right">
+
+      <view class="order-price">￥{{detail.orderPrice}}</view>
+
+      <view class="num">共{{totalNum}}件</view>
+
+    </view>
+
+  </view>
+
+  <view class="bottom">
+    <view class="cancel" bindtap="cancelOrder" wx:if="{{state === '进行中'}}">取消订单</view>
+  </view>
+
+
+
+</view>

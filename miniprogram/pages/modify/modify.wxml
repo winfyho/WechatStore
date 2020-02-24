@@ -1,0 +1,24 @@
+<!--miniprogram/pages/modify/modify.wxml-->
+<view class="modify">
+  <view class="title">用户名</view>
+  <view class="text">
+    <input placeholder="输入新的用户名" value="{{username}}" bindinput="inputUsername" class="{{modify === true ? 'active' : ''}}"  disabled="{{!modify}}"></input>
+  </view>
+</view>
+
+<view class="modify">
+  <view class="title">手机号</view>
+  <view class="text">
+    <input placeholder="输入新的手机号" value="{{tellphone}}" bindinput="inputTell" class="{{modify === true ? 'active' : ''}}" disabled="{{!modify}}"></input>
+  </view>
+</view>
+
+<view class="modify">
+  <view class="title">地址</view>
+  <view class="text">
+    <input placeholder="输入新地址" value="{{userAddr}}" bindinput="inputAddress" class="{{modify === true ? 'active' : ''}}" disabled="{{!modify}}"></input>
+  </view>
+</view>
+
+<view class="btn btn-modify" wx:if="{{modify===false}}"  bindtap="modify">修改信息</view>
+<view class="btn btn-complete" wx:else bindtap="complete" >完成</view>

@@ -1,0 +1,22 @@
+<!--miniprogram/pages/profile/profile.wxml-->
+
+
+<view class="login" wx:if="{{loginState === false}}">
+  <view class="btn-login" bindtap="login">登录</view>
+</view>
+
+<view class="user-infor" wx:else bindtap="routeToModify" >
+  <view class="user-icon">头像</view>
+  <view class="username">{{user.username}}</view>
+  <view class="icon-right"> > </view>
+</view>
+
+<view class="route addresss" bindtap="routeToAddress">
+  <view class="title">我的收货地址</view>
+  <view class="icon"> > </view>
+</view>
+
+<view class="route orders" bindtap="routeToOrderHistory" >
+  <view class="title">历史订单</view>
+  <view class="icon"> > </view>
+</view>

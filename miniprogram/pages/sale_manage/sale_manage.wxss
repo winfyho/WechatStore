@@ -1,0 +1,62 @@
+/* miniprogram/pages/sale_manage/sale_manage.wxss */
+page{
+  background: #f5f5f5;
+}
+.btn-add,
+.btn-complete{
+  width: 100%;
+  text-align: center;
+  color: #00B26A;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.btn-complete{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  color: #fff;
+  background:#00B26A; 
+}
+.add-area{
+  
+  width: 95%;
+  height: 550rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin: 10rpx auto;
+  box-sizing: border-box;
+  padding: 15rpx 30rpx;
+}
+.add-area .add-input{
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  
+}
+.add-area .add-input .add-title{
+  flex: 0 0 150rpx;
+}
+.add-area .add-input .add-value{
+  flex: 1 1 auto;
+}
+.add-area .add-input .add-value input{
+  width: 100%;
+  height: 100%;
+  line-height: 80rpx;
+}
+
+.add-area .add-input .btn-upload{
+  background: #ddd;
+  text-align: center;
+  border-radius: 15rpx;
+  margin-right: 20rpx;
+}
+.add-area .add-input .add-images{
+  width: 200rpx;
+  height: 250rpx;
+  overflow: hidden;
+}
+.add-area .add-input .add-images image{
+  width: 100%;
+}

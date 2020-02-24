@@ -1,0 +1,20 @@
+<view class="address">
+  <address address="{{addrList[0]}}" />
+</view>
+
+<view class="content pay-method">
+  <view class="title">支付方式</view>
+  <view class="method">在线支付</view>
+  <view class="icon">></view>
+</view>
+
+<view class="order-list">
+  <order-item wx:for="{{saleList}}" wx:key="index" orderItem="{{item}}" />
+
+</view>
+
+<view class="pay">
+  <view class="order-price">￥{{orderPrice}}</view>
+
+  <view class="btn-pay" bindtap="addOrder">提交订单</view>
+</view>

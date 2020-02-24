@@ -1,0 +1,50 @@
+<view class="btn-add" bindtap="startEdit" wx:if="{{showEditArea === false}}">添加商品</view>
+<view class="btn-complete" bindtap="completeEdit" wx:else>完成</view>
+<view class="add-area" wx:if="{{showEditArea === true}}">
+
+  <view class="add-input">
+    <view class="add-title">商品名称：</view>
+    <view class="add-value">
+      <input placeholder="输入商品名称" bindinput="inputNewName" value="{{newName}}"></input>
+    </view>
+  </view>
+
+  <view class="add-input">
+    <view class="add-title">描述：</view>
+    <view class="add-value">
+      <input placeholder="商品页的描述标题" bindinput="inputNewTitle" value="{{newTitle}}"></input>
+    </view>
+  </view>
+
+  <view class="add-input">
+    <view class="add-title">库存：</view>
+    <view class="add-value">
+      <input placeholder="输入商品库存" type="number" bindinput="inputStock" value="{{stock}}"></input>
+    </view>
+  </view>
+
+ 
+
+  <view class="add-input">
+    <view class="add-title">价格：</view>
+    <view class="add-value">
+      <input placeholder="输入售价" type="number" bindinput="inputNewPrice" value="{{newPrice}}"></input>
+    </view>
+  </view>
+
+  <view class="add-input">
+    <view class="add-title btn-upload" bindtap="chooseImage">上传图片</view>
+
+    <view class="add-images">
+      <image src="{{filePath}}" mode="widthFix"></image>
+    </view>
+    
+  </view>
+
+</view>
+
+<view class="body">
+
+  <sale-item wx:for="{{saleList}}" wx:key="_id" sale="{{item}}" data-id="{{item._id}}" bindlongpress="deleteSale" />
+
+</view>

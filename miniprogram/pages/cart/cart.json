@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "cart-item":"/components/cart-item/cart-item"
+  },
+  "navigationBarTitleText": "购物车",
+  "backgroundColor": "#aaa",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,12 @@
+<!--components/address/address.wxml-->
+
+<view class="address">
+
+  <view class="top">{{address.address}}</view>
+
+  <view class="bottom">
+    <view class="name">{{address.name}}</view>
+    <view class="tellphone">{{address.tellphone}}</view>
+  </view>
+
+</view>

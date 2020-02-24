@@ -1,0 +1,19 @@
+<view class="sale-item">
+  <view class="image">
+    <image src="{{sale.imgUrl}}"></image>
+  </view>
+
+  <view class="content">
+
+    <view class="title">{{sale.title}}</view>
+    <view class="time">{{sale.time}}</view>
+
+    <view class="data-num">
+      <text>{{sale.pay_num || 0}}人付款</text>
+      <text>{{sale.cart_num || 0}}人添加</text>
+      <text>浏览：{{sale.browse_num || 0}}</text>
+    </view>
+
+    <view class="price">{{sale.price}}</view>
+  </view>
+</view>

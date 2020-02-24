@@ -1,0 +1,11 @@
+<!--miniprogram/pages/cart/cart.wxml-->
+
+<view class="body">
+
+  <cart-item wx:for="{{cartList}}" wx:key="{{index}}" cartItem="{{item.sale}}" num="{{item.num}}" 
+  data-sid="{{item.sale._id}}"  data-cartid="{{item._id}}"
+  bindtap="routeToDetail" bindlongtap="deleteCart" />
+  
+
+
+</view>

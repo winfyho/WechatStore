@@ -1,0 +1,18 @@
+<view class="search">
+  <view class="search-bar">
+    <input placeholder="输入要搜索的内容" value="{{keyword}}" bindinput="inputKeyword"></input>
+  </view>
+  <view class="btn-search" bindtap="searchSaleList">搜索</view>
+</view>
+
+<view class="filter">
+  <view class="{{filterIndex === 0 ? 'active' : ''}}"  bindtap="orderByValue">综合</view>
+  <view class="{{filterIndex === 1 ? 'active' : ''}}"  bindtap="orderByPrice" >{{filterPriceName}}</view>
+  <view class="{{filterIndex === 2 ? 'active' : ''}}" bindtap="orderByHot" >热度</view>
+</view>
+
+<view class="body">
+  <sale class="sale-item" wx:for="{{saleList}}" wx:key="index" sale="{{item}}" data-sid="{{item._id}}" data-browse_num="{{browse_num || 0}}" bindtap="routeToDetail"  />
+  
+  
+</view>

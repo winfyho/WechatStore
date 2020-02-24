@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "sale-item":"/components/sale-item/sale-item"
+  },
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#F6F6F6",
+  "navigationBarTitleText": "商品管理页面",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "address":"/components/address/address",
+    "order-item":"/components/order-item/order-item"
+  }
+}

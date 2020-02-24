@@ -1,0 +1,25 @@
+/* components/address/address.wxss */
+.address{
+  background: #fff;
+  margin-bottom: 3rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+.address .top{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-weight: 600;
+  color: #424242;
+}
+.address .bottom{
+  color: #666;
+  height: 50rpx;
+  line-height: 60rpx;
+  display: flex;
+}
+.address .bottom .name{
+  flex: 0 0 110rpx;
+}
+.address .bottom .tellphone{
+  flex: 1 1 auto;
+}

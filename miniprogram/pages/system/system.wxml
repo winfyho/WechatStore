@@ -1,0 +1,10 @@
+<!-- 
+<view class="route route-order" bindtap="routeToSaleModify">
+  <view class="title">管理订单</view>
+  <view class="icon-right"> > </view>
+</view> -->
+
+<view class="route route-sale" bindtap="routeToSaleManage">
+  <view class="title">管理商品</view>
+  <view class="icon-right"> > </view>
+</view>

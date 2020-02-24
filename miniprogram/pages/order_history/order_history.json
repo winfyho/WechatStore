@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "order":"/components/order/order"
+  },
+  "navigationBarTitleText": "我的历史订单",
+  "enablePullDownRefresh": true
+}
